@@ -1,0 +1,120 @@
+.skills {
+  position: relative;
+  margin-top: 200px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: linear-gradient(
+    318deg,
+    rgba(66, 5, 107, 0.2) 0%,
+    rgba(66, 5, 107, 0.2) 100%
+  );
+  &__title {
+    align-items: center;
+    margin: 0 0 48px 0;
+  }
+  &__slider {
+    &-wrap {
+      margin-bottom: 50px;
+    }
+  }
+  &__slide {
+    &-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 12px;
+      border-radius: 15px;
+      min-width: 198px;
+      height: 250px;
+      position: relative;
+      z-index: 1;
+      background: linear-gradient(
+        152deg,
+        rgb(40 28 49) 0%,
+        rgb(38 18 52) 43%,
+        rgb(46 14 60) 100%
+      );
+      cursor: pointer;
+    }
+    & .icon {
+      width: 90px;
+      height: 90px;
+    }
+    &-name {
+      font-weight: bold;
+      font-size: 28px;
+      text-transform: uppercase;
+      margin-top: 16px;
+    }
+    &-box {
+      margin-top: 25px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 8px;
+    }
+    &-numbers {
+      font-weight: bold;
+    }
+    &-progress {
+      position: relative;
+      width: 118px;
+      height: 5px;
+      background-color: var(--white);
+      border-radius: 4px;
+      &-fill {
+        position: absolute;
+        background-color: var(--purple);
+        height: 5px;
+      }
+    }
+    &-gradient {
+      position: absolute;
+      border-radius: 15px;
+      min-width: 207px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -0;
+      background: linear-gradient(
+        0deg,
+        rgba(64, 11, 103, 1) 0%,
+        rgba(122, 36, 173, 1) 57%,
+        rgba(74, 25, 211, 1) 100%
+      );
+    }
+  }
+}
+
+.swiper-pagination {
+  &-bullet {
+    width: 18px;
+    height: 18px;
+    background-color: var(--purple);
+    &-active-main {
+      width: 18px;
+      height: 18px;
+      background-color: var(--purple);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .skills {
+    margin-top: 90px;
+  }
+  .skills__title {
+    align-items: center;
+    font-size: 38px;
+  }
+}
+@media (max-width: 425px) {
+  .skills {
+    margin-top: 65px;
+    padding-top: 28px;
+    padding-bottom: 35px;
+  }
+}

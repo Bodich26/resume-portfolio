@@ -1,0 +1,33 @@
+.social {
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+  }
+  &__item {
+    height: 28px;
+    &-link {
+      transition: ease 0.3s;
+      display: inline-flex;
+      width: 28px;
+      height: 28px;
+      color: var(--purple);
+      &:hover {
+        svg {
+          color: #6310cf;
+        }
+      }
+    }
+  }
+  &__icon {
+    transition: ease 0.3s;
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 475px) {
+  .social__list {
+    column-gap: 19px;
+  }
+}

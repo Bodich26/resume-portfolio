@@ -1,0 +1,36 @@
+@import "mixins";
+@import "reset";
+@import "variable";
+@import "fonts";
+@import "header";
+@import "screen";
+@import "design";
+@import "frontend";
+@import "skills";
+@import "about";
+@import "footer";
+
+@import "socialicon";
+@import "decorelements";
+@import "menu";
+
+.container {
+  @include min-max(320px, 1372px, 15px);
+}
+
+.overlay {
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  padding-right: 10px;
+  &::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+  }
+}
