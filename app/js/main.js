@@ -49,9 +49,17 @@ const menu = document.querySelector(".menu");
 const btnMenu = document.querySelector(".menu-icon");
 const closeMenu = document.querySelector(".menu__line-close");
 
-btnMenu.addEventListener("click", () => {
+btnMenu.addEventListener("click", (event) => {
   menu.classList.add("open");
+  event.stopPropagation();
 });
-closeMenu.addEventListener("click", () => {
+closeMenu.addEventListener("click", (event) => {
   menu.classList.remove("open");
+  event.stopPropagation();
+});
+window.addEventListener("click", (event) => {
+  menu.classList.remove("open");
+});
+menu.addEventListener("click", (event) => {
+  event.stopPropagation();
 });
