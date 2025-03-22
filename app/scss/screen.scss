@@ -51,7 +51,7 @@
       content: "";
       position: absolute;
       width: 3px;
-      height: 345px;
+      height: 365px;
       left: 0;
       border: 50%;
       background-color: var(--purple);
@@ -65,6 +65,7 @@
       font-size: 21px;
       opacity: 0.8;
       margin-top: 22px;
+      line-height: 1.5em;
     }
     &-btn {
       margin-top: 32px;
