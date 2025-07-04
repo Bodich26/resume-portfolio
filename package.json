@@ -27,6 +27,7 @@
     "sass": "^1.64.1"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "cwebp-bin": "^8.0.0",
     "mozjpeg": "^8.0.0"
   }

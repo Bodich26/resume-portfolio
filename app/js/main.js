@@ -63,3 +63,14 @@ window.addEventListener("click", (event) => {
 menu.addEventListener("click", (event) => {
   event.stopPropagation();
 });
+
+document.querySelectorAll(".front__block-item").forEach((block) => {
+  block.addEventListener("click", (e) => {
+    if (e.target.closest("a")) return;
+
+    const link = block.querySelector(".front__block-icon[href]");
+    if (link) {
+      window.open(link.href, "_blank");
+    }
+  });
+});

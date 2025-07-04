@@ -51,10 +51,12 @@
       content: "";
       position: absolute;
       width: 3px;
-      height: 365px;
+      height: 100%;
       left: 0;
       border: 50%;
       background-color: var(--purple);
+      animation: bounce; 
+      animation-duration: 1s;
     }
     &-social {
       margin-top: 48px;
